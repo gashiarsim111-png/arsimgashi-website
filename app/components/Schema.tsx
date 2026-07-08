@@ -4,20 +4,20 @@ export default function Schema() {
   const schema = {
     "@context": "https://schema.org",
 
-    "@type": ["Person", "Musician"],
+    "@type": "Person",
 
     name: "Arsim Gashi",
 
     url: "https://arsimgashi.com",
 
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": "https://arsimgashi.com",
-    },
-
     image: {
       "@type": "ImageObject",
       url: "https://arsimgashi.com/og-image.jpg",
+    },
+
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": "https://arsimgashi.com",
     },
 
     jobTitle: [
@@ -28,12 +28,6 @@ export default function Schema() {
 
     description:
       "Arsim Gashi is a professional violinist, soloist and concertmaster. Official website featuring biography, performances, gallery and artistic activities.",
-
-    genre: [
-      "Classical Music",
-      "Orchestral Music",
-      "Solo Violin",
-    ],
 
     knowsAbout: [
       "Violin Performance",
