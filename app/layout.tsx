@@ -33,6 +33,8 @@ export const metadata: Metadata = {
   authors: [{ name: "Arsim Gashi" }],
   creator: "Arsim Gashi",
   publisher: "Arsim Gashi",
+  applicationName: "Arsim Gashi Official Website",
+  category: "Music",
 
   alternates: {
     canonical: "https://arsimgashi.com",
@@ -67,6 +69,7 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    noimageindex: false,
     googleBot: {
       index: true,
       follow: true,

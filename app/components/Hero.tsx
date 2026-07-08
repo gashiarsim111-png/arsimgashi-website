@@ -2,13 +2,16 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section
+      className="relative h-screen flex items-center justify-center overflow-hidden"
+      aria-label="Arsim Gashi official website hero section"
+    >
 
       {/* Desktop Image */}
       <div className="hidden md:block absolute inset-0">
         <Image
           src="/hero.jpg"
-          alt="Arsim Gashi violinist"
+          alt="Arsim Gashi, professional violinist performing with violin"
           fill
           priority
           className="object-cover object-center"
@@ -19,7 +22,7 @@ export default function Hero() {
       <div className="block md:hidden absolute inset-0">
         <Image
           src="/hero-mobile.jpg"
-          alt="Arsim Gashi violinist"
+          alt="Arsim Gashi violinist official portrait"
           fill
           priority
           className="object-cover object-center"
@@ -45,14 +48,16 @@ export default function Hero() {
         </p>
 
         <p className="mt-6 max-w-2xl mx-auto text-gray-300 leading-relaxed">
-          Classical violinist from Kosovo, dedicated to musical excellence,
-          artistic expression and unforgettable performances.
+          Classical violinist dedicated to artistic excellence,
+          expressive performances and unforgettable musical experiences
+          through the violin.
         </p>
 
         <div className="mt-10 flex flex-col sm:flex-row justify-center gap-5">
 
           <a
             href="#about"
+            aria-label="Read Arsim Gashi biography"
             className="rounded-full bg-white px-10 py-4 text-black font-semibold hover:scale-105 transition"
           >
             Biography
@@ -60,6 +65,7 @@ export default function Hero() {
 
           <a
             href="#gallery"
+            aria-label="View Arsim Gashi performances gallery"
             className="rounded-full border border-white px-10 py-4 hover:bg-white hover:text-black transition"
           >
             Performances
