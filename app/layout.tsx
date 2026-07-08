@@ -48,10 +48,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/hero.jpg",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Arsim Gashi Violinist",
+        alt: "Arsim Gashi | Violinist",
       },
     ],
   },
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     title: "Arsim Gashi | Violinist",
     description:
       "Official website of Arsim Gashi, violinist, soloist and concertmaster.",
-    images: ["/hero.jpg"],
+    images: ["/og-image.jpg"],
   },
 
   robots: {
