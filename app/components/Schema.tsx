@@ -26,6 +26,18 @@ export default function Schema() {
       "Concertmaster",
     ],
 
+    nationality: {
+      "@type": "Country",
+      name: "Kosovo",
+    },
+
+    birthDate: "2001-03-24",
+
+    birthPlace: {
+      "@type": "Place",
+      name: "Prishtina, Kosovo",
+    },
+
     description:
       "Arsim Gashi is a professional violinist, soloist and concertmaster. Official website featuring biography, performances, gallery and artistic activities.",
 

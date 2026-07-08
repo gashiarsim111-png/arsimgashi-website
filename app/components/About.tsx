@@ -1,10 +1,6 @@
 export default function About() {
   return (
-    <section
-      id="about"
-      className="py-24 px-6 bg-white text-black"
-      aria-label="Biography of Arsim Gashi"
-    >
+    <section id="about" className="py-24 px-6 bg-white text-black">
       <div className="max-w-6xl mx-auto">
 
         <div className="text-center mb-12">
@@ -13,7 +9,7 @@ export default function About() {
           </p>
 
           <h2 className="text-4xl md:text-5xl font-bold mt-4">
-            Arsim Gashi
+            Arsim Gashi - Professional Violinist
           </h2>
 
           <p className="mt-4 text-gray-600">
@@ -22,7 +18,7 @@ export default function About() {
         </div>
 
 
-        <article className="space-y-6 text-lg leading-relaxed text-gray-700">
+        <div className="space-y-6 text-lg leading-relaxed text-gray-700">
 
           <p>
             Arsim Gashi (24.03.2001, Prishtinë, Kosovë) është violinist
@@ -33,15 +29,17 @@ export default function About() {
 
           <p>
             Bachelorin në Violinë e përfundoi në vitin 2024, ndërsa në vitin
-            2026 përfundoi Masterin e Arteve në Violinë. Që nga mosha 13-vjeçare
-            është aktiv në skenën artistike përmes recitaleve, performancave
-            solistike, orkestrale dhe muzikës së dhomës në Kosovë dhe jashtë saj.
+            2026 përfundoi Masterin e Arteve në Violinë. Që në moshën 13-vjeçare
+            u paraqit me recitalin e tij të parë dhe që atëherë ka vazhduar
+            aktivitetin e tij artistik përmes paraqitjeve solistike,
+            orkestrale dhe kamerale në Kosovë dhe jashtë saj.
           </p>
 
           <p>
-            Si violinist dhe koncertmjeshtër, Arsim Gashi karakterizohet nga
-            përkushtimi ndaj interpretimit muzikor, saktësia teknike dhe
-            shprehja artistike në repertorin klasik.
+            Si violinist dhe koncertmjeshtër, Arsim Gashi është dalluar për
+            përkushtimin ndaj interpretimit muzikor, saktësinë teknike dhe
+            aftësinë për të bashkuar traditën klasike me një shprehje të
+            veçantë artistike.
           </p>
 
 
@@ -69,13 +67,13 @@ export default function About() {
           </h3>
 
           <ul className="list-disc pl-6 space-y-2">
-            <li>Recitale solistike – Prishtinë (2015, 2016, 2019)</li>
+            <li>Recital Solistik – Prishtinë (2015, 2016, 2019)</li>
             <li>Solist me Western Balkan Youth Orchestra – Shkup (2021)</li>
             <li>Recital solistik në DAM Festival (2023)</li>
             <li>Chopin Fest</li>
             <li>Kamer Fest – Solist me orkestër harkore</li>
             <li>
-              Solist dhe koncertmjeshtër me Orkestrën Ballkanike Teatro Diego
+              Solist dhe Koncertmjeshtër me Orkestrën Ballkanike Teatro Diego
               Fabbri, Forli, Itali
             </li>
           </ul>
@@ -86,12 +84,20 @@ export default function About() {
           </h3>
 
           <ul className="list-disc pl-6 space-y-2">
-            <li>Koncertmjeshtër në koncertin e 70-vjetorit të SH.M.M. “Prenk Jakova”</li>
-            <li>Koncertmjeshtër me Orkestrën Ballkanike Teatro Diego Fabbri, Forli, Itali</li>
-            <li>Koncertmjeshtër me Orkestrën e Universitetit të Prishtinës</li>
+            <li>
+              Koncertmjeshtër në koncertin e 70-vjetorit të SH.M.M. “Prenk Jakova”
+            </li>
+            <li>
+              Koncertmjeshtër me Orkestrën Ballkanike Teatro Diego Fabbri, Forli, Itali
+            </li>
+            <li>
+              Koncertmjeshtër me Orkestrën e Universitetit të Prishtinës
+            </li>
             <li>Pjesëtar i Orkestrës së Operës së Kosovës</li>
             <li>Bashkëpunëtor i jashtëm i Filharmonisë së Kosovës</li>
-            <li>Pjesëtar i Orkestrës së Kryeqytetit “Orkestra Prishtina”</li>
+            <li>
+              Pjesëtar i Orkestrës së Kryeqytetit “Orkestra Prishtina”
+            </li>
           </ul>
 
 
@@ -101,8 +107,8 @@ export default function About() {
 
           <p>
             Bach, Mozart, Bruch, Tchaikovsky, Paganini, Saint-Saëns,
-            Wieniawski, Vieuxtemps, Ysaÿe, Bartók dhe vepra të tjera të
-            repertorit klasik për violinë.
+            Wieniawski, Vieuxtemps, Ysaÿe, Bartók dhe shumë vepra të tjera
+            të repertorit klasik për violinë.
           </p>
 
 
@@ -111,11 +117,10 @@ export default function About() {
           </h3>
 
           <p>
-            Shqip • Anglisht
+            Shqip • Anglisht • Gjermanisht
           </p>
 
-        </article>
-
+        </div>
       </div>
     </section>
   );
