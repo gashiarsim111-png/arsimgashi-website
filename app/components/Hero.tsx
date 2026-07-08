@@ -4,16 +4,32 @@ export default function Hero() {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
 
-      <Image
-        src="/hero.jpg"
-        alt="Arsim Gashi violinist"
-        fill
-        priority
-        className="object-cover"
-      />
+      {/* Desktop Image */}
+      <div className="hidden md:block absolute inset-0">
+        <Image
+          src="/hero.jpg"
+          alt="Arsim Gashi violinist"
+          fill
+          priority
+          className="object-cover object-center"
+        />
+      </div>
 
+      {/* Mobile Image */}
+      <div className="block md:hidden absolute inset-0">
+        <Image
+          src="/hero-mobile.jpg"
+          alt="Arsim Gashi violinist"
+          fill
+          priority
+          className="object-cover object-center"
+        />
+      </div>
+
+      {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/60" />
 
+      {/* Content */}
       <div className="relative z-10 text-center text-white px-6">
 
         <p className="uppercase tracking-[8px] text-sm md:text-base text-gray-300 mb-6">
