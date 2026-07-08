@@ -2,17 +2,39 @@ export default function Schema() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "Arsim Gashi",
-    "url": "https://arsimgashi.com",
-    "image": "https://arsimgashi.com/hero.jpg",
-    "jobTitle": "Violinist, Soloist, Concertmaster",
-    "birthPlace": {
-      "@type": "Place",
-      "name": "Prishtinë, Kosovo"
+
+    name: "Arsim Gashi",
+
+    alternateName: "Arsim Gashi Violinist",
+
+    url: "https://arsimgashi.com",
+
+    image: "https://arsimgashi.com/hero.jpg",
+
+    description:
+      "Official website of Arsim Gashi, violinist, soloist and concertmaster.",
+
+    jobTitle: "Violinist",
+
+    knowsAbout: [
+      "Violin",
+      "Classical Music",
+      "Solo Performance",
+      "Concertmaster",
+      "Music"
+    ],
+
+    nationality: {
+      "@type": "Country",
+      name: "Kosovo"
     },
-    "email": "mailto:Info@arsimgashi.com",
-    "telephone": "+38345963933",
-    "sameAs": []
+
+    sameAs: [
+      "https://instagram.com/arsimgashiviolinist",
+      "https://facebook.com/arsimgashiofficial",
+      "https://tiktok.com/@arsimgashiviolinist",
+      "https://youtube.com/@arsimgashiviolinist"
+    ]
   };
 
   return (
