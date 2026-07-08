@@ -29,6 +29,31 @@ export default function Schema() {
     description:
       "Arsim Gashi is a professional violinist, soloist and concertmaster. Official website featuring biography, performances, gallery and artistic activities.",
 
+    award: [
+      "Finalist - Arthur Grumiaux International Violin Competition, Belgium (2018)",
+      "Special Prize - Arthur Grumiaux International Violin Competition",
+      "First Absolute Prize - Ars Kosova Competition",
+      "Young Talent - ESTA Austria",
+      "Promising Talent - ESTA Kosova",
+      "Second Prize - Whitgift International Competition, South London",
+      "First Absolute Prize - Ohrid te Sakam Competition",
+    ],
+
+    subjectOf: [
+      {
+        "@type": "Article",
+        name: "Arsim Gashi - Finalist at Arthur Grumiaux International Violin Competition",
+        url:
+          "https://theviolinchannel.com/grumiaux-international-violin-competition-belgium-finalists-2018/",
+      },
+      {
+        "@type": "Article",
+        name: "Arsim Gashi listed among candidates of Arthur Grumiaux International Competition",
+        url:
+          "https://theviolinchannel.com/candidates-2018-grumiaux-international-competition-young-violinists/",
+      },
+    ],
+
     knowsAbout: [
       "Violin Performance",
       "Classical Music",
