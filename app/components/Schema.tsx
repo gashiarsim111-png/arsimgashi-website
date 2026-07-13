@@ -10,6 +10,12 @@ export default function Schema() {
 
     url: "https://arsimgashi.com",
 
+    identifier: {
+      "@type": "PropertyValue",
+      propertyID: "Wikidata",
+      value: "Q97440789",
+    },
+
     image: {
       "@type": "ImageObject",
       url: "https://arsimgashi.com/og-image.jpg",
@@ -39,16 +45,10 @@ export default function Schema() {
     },
 
     description:
-      "Arsim Gashi is a professional violinist, soloist and concertmaster. Official website featuring biography, performances, gallery and artistic activities.",
+      "Arsim Gashi is a Kosovan violinist, soloist and chamber musician. His official website features biography, performances, recordings and artistic activities.",
 
     award: [
       "Finalist - Arthur Grumiaux International Violin Competition, Belgium (2018)",
-      "Special Prize - Arthur Grumiaux International Violin Competition",
-      "First Absolute Prize - Ars Kosova Competition",
-      "Young Talent - ESTA Austria",
-      "Promising Talent - ESTA Kosova",
-      "Second Prize - Whitgift International Competition, South London",
-      "First Absolute Prize - Ohrid te Sakam Competition",
     ],
 
     subjectOf: [
@@ -75,6 +75,9 @@ export default function Schema() {
     ],
 
     sameAs: [
+      "https://arsimgashi.com",
+      "https://sq.wikipedia.org/wiki/Arsim_Gashi",
+      "https://www.wikidata.org/wiki/Q97440789",
       "https://www.instagram.com/arsimgashiviolinist/",
       "https://www.facebook.com/arsimgashiofficial",
       "https://www.youtube.com/@arsimgashiviolinist",
@@ -88,6 +91,17 @@ export default function Schema() {
         "Professional musician specializing in classical violin performance.",
     },
 
+    alumniOf: [
+      {
+        "@type": "EducationalOrganization",
+        name: "University of Prishtina - Faculty of Arts",
+      },
+      {
+        "@type": "EducationalOrganization",
+        name: "Prenk Jakova Music School",
+      },
+    ],
+
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "Booking and professional inquiries",
@@ -95,9 +109,8 @@ export default function Schema() {
     },
 
     knowsLanguage: [
-      "English",
       "Albanian",
-      "German",
+      "English",
     ],
   };
 
