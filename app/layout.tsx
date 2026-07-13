@@ -9,7 +9,7 @@ const cinzel = Cinzel({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://arsimgashi.com"),
+  metadataBase: new URL("https://www.arsimgashi.com"),
 
   title: {
     default: "Arsim Gashi | Violinist",
@@ -37,14 +37,14 @@ export const metadata: Metadata = {
   category: "Music",
 
   alternates: {
-    canonical: "https://arsimgashi.com",
+    canonical: "https://www.arsimgashi.com",
   },
 
   openGraph: {
     title: "Arsim Gashi | Violinist",
     description:
       "Official website of Arsim Gashi, violinist, soloist and concertmaster.",
-    url: "https://arsimgashi.com",
+    url: "https://www.arsimgashi.com",
     siteName: "Arsim Gashi",
     locale: "en_US",
     type: "website",

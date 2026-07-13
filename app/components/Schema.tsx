@@ -5,7 +5,7 @@ export default function Schema() {
 
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://arsimgashi.com"
+      "@id": "https://www.arsimgashi.com"
     },
 
     "name": "Arsim Gashi",
@@ -15,11 +15,11 @@ export default function Schema() {
       "Arsim Gashi Official"
     ],
 
-    "url": "https://arsimgashi.com",
+    "url": "https://www.arsimgashi.com",
 
     "image": {
       "@type": "ImageObject",
-      "url": "https://arsimgashi.com/og-image.jpg"
+      "url": "https://www.arsimgashi.com/og-image.jpg"
     },
 
     "description":
@@ -77,17 +77,6 @@ export default function Schema() {
     ],
 
 
-    "award": [
-      "Finalist - Arthur Grumiaux International Violin Competition, Belgium (2018)",
-      "Special Prize from violinist Dora Schwarzberg - Arthur Grumiaux Competition",
-      "First Absolute Prize - Ars Kosova Competition",
-      "Young Talent - ESTA Austria",
-      "Promising Talent - ESTA Kosovo",
-      "Second Prize - Whitgift International Competition, South London",
-      "First Absolute Prize - Ohrid te Sakam Competition"
-    ],
-
-
     "worksFor": [
       {
         "@type": "Organization",
@@ -100,6 +89,33 @@ export default function Schema() {
     ],
 
 
+    "award": [
+      "Finalist - Arthur Grumiaux International Violin Competition, Belgium (2018)",
+      "Special Prize from violinist Dora Schwarzberg - Arthur Grumiaux Competition",
+      "First Absolute Prize - Ars Kosova Competition",
+      "Young Talent - ESTA Austria",
+      "Promising Talent - ESTA Kosovo",
+      "Second Prize - Whitgift International Competition, South London",
+      "First Absolute Prize - Ohrid te Sakam Competition"
+    ],
+
+
+    "performerIn": [
+      {
+        "@type": "MusicEvent",
+        "name": "DAM Festival"
+      },
+      {
+        "@type": "MusicEvent",
+        "name": "KamerFest"
+      },
+      {
+        "@type": "MusicEvent",
+        "name": "Western Balkan Youth Orchestra"
+      }
+    ],
+
+
     "memberOf": [
       {
         "@type": "Organization",
@@ -107,11 +123,11 @@ export default function Schema() {
       },
       {
         "@type": "Organization",
-        "name": "Orkestra Prishtina"
+        "name": "Kosovo Opera Orchestra"
       },
       {
         "@type": "Organization",
-        "name": "Kosovo Opera Orchestra"
+        "name": "Orkestra Prishtina"
       }
     ],
 
@@ -161,8 +177,10 @@ export default function Schema() {
 
     "contactPoint": {
       "@type": "ContactPoint",
-      "contactType": "Booking and professional inquiries",
-      "url": "https://arsimgashi.com/contact"
+      "contactType":
+        "Booking and professional inquiries",
+      "url":
+        "https://www.arsimgashi.com/contact"
     }
   };
 

@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://arsimgashi.com/sitemap.xml",
-    host: "https://arsimgashi.com",
+    sitemap: "https://www.arsimgashi.com/sitemap.xml",
+    host: "https://www.arsimgashi.com",
   };
 }
