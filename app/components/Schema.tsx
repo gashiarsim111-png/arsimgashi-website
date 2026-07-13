@@ -3,8 +3,6 @@ export default function Schema() {
     "@context": "https://schema.org",
     "@type": "Person",
 
-    "@id": "https://arsimgashi.com/#person",
-
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://arsimgashi.com"
@@ -24,13 +22,11 @@ export default function Schema() {
       "url": "https://arsimgashi.com/og-image.jpg"
     },
 
-
     "description":
       "Arsim Gashi is a Kosovan violinist, soloist and concertmaster known for classical violin performances, international competitions and orchestral activities.",
 
 
     "birthDate": "2001-03-24",
-
 
     "birthPlace": {
       "@type": "Place",
@@ -82,29 +78,13 @@ export default function Schema() {
 
 
     "award": [
-      "Arthur Grumiaux International Violin Competition for Young Violinists - Finalist (Belgium, 2018)",
+      "Finalist - Arthur Grumiaux International Violin Competition, Belgium (2018)",
       "Special Prize from violinist Dora Schwarzberg - Arthur Grumiaux Competition",
-      "Ars Kosova - First Absolute Prize",
-      "ESTA Austria - Young Talent",
-      "ESTA Kosovo - Promising Talent",
-      "Whitgift International Competition South London - Second Prize",
-      "Ohrid te Sakam - First Absolute Prize"
-    ],
-
-
-    "performerIn": [
-      {
-        "@type": "MusicEvent",
-        "name": "DAM Festival"
-      },
-      {
-        "@type": "MusicEvent",
-        "name": "KamerFest"
-      },
-      {
-        "@type": "MusicEvent",
-        "name": "Western Balkan Youth Orchestra"
-      }
+      "First Absolute Prize - Ars Kosova Competition",
+      "Young Talent - ESTA Austria",
+      "Promising Talent - ESTA Kosovo",
+      "Second Prize - Whitgift International Competition, South London",
+      "First Absolute Prize - Ohrid te Sakam Competition"
     ],
 
 
@@ -127,11 +107,11 @@ export default function Schema() {
       },
       {
         "@type": "Organization",
-        "name": "Kosovo Opera Orchestra"
+        "name": "Orkestra Prishtina"
       },
       {
         "@type": "Organization",
-        "name": "Orkestra Prishtina"
+        "name": "Kosovo Opera Orchestra"
       }
     ],
 
@@ -147,6 +127,18 @@ export default function Schema() {
         },
         "url":
           "https://theviolinchannel.com/grumiaux-international-violin-competition-belgium-finalists-2018/"
+      },
+
+      {
+        "@type": "Article",
+        "name":
+          "Arthur Grumiaux International Competition Candidates",
+        "publisher": {
+          "@type": "Organization",
+          "name": "The Violin Channel"
+        },
+        "url":
+          "https://theviolinchannel.com/candidates-2018-grumiaux-international-competition-young-violinists/"
       }
     ],
 
@@ -170,7 +162,7 @@ export default function Schema() {
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "Booking and professional inquiries",
-      "url": "https://arsimgashi.com/#contact"
+      "url": "https://arsimgashi.com/contact"
     }
   };
 
