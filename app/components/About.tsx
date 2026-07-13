@@ -117,7 +117,7 @@ export default function About() {
           </h3>
 
           <p>
-            Shqip • Anglisht • Gjermanisht
+            Shqip • Anglisht
           </p>
 
         </div>
