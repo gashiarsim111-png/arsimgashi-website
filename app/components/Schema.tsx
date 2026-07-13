@@ -5,6 +5,11 @@ export default function Schema() {
 
     "@id": "https://arsimgashi.com/#person",
 
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://arsimgashi.com"
+    },
+
     "name": "Arsim Gashi",
 
     "alternateName": [
@@ -16,9 +21,7 @@ export default function Schema() {
 
     "image": {
       "@type": "ImageObject",
-      "url": "https://arsimgashi.com/og-image.jpg",
-      "width": 1200,
-      "height": 630
+      "url": "https://arsimgashi.com/og-image.jpg"
     },
 
 
@@ -27,6 +30,7 @@ export default function Schema() {
 
 
     "birthDate": "2001-03-24",
+
 
     "birthPlace": {
       "@type": "Place",
@@ -50,18 +54,18 @@ export default function Schema() {
 
     "hasOccupation": {
       "@type": "Occupation",
-      "name": "Professional Violinist"
+      "name": "Professional Violinist",
+      "description":
+        "Classical violin performer specializing in solo, chamber and orchestral performances."
     },
-
-
-    "instrument": "Violin",
 
 
     "knowsAbout": [
       "Classical Music",
       "Violin Performance",
       "Chamber Music",
-      "Orchestral Music"
+      "Orchestral Music",
+      "Solo Violin"
     ],
 
 
@@ -77,22 +81,8 @@ export default function Schema() {
     ],
 
 
-    "hasCredential": [
-      {
-        "@type": "EducationalOccupationalCredential",
-        "name": "Bachelor Degree in Violin Performance",
-        "dateCreated": "2024"
-      },
-      {
-        "@type": "EducationalOccupationalCredential",
-        "name": "Master Degree in Violin Performance",
-        "dateCreated": "2026"
-      }
-    ],
-
-
     "award": [
-      "Arthur Grumiaux International Competition for Young Violinists - Finalist (Belgium, 2018)",
+      "Arthur Grumiaux International Violin Competition for Young Violinists - Finalist (Belgium, 2018)",
       "Special Prize from violinist Dora Schwarzberg - Arthur Grumiaux Competition",
       "Ars Kosova - First Absolute Prize",
       "ESTA Austria - Young Talent",
@@ -107,15 +97,25 @@ export default function Schema() {
         "@type": "MusicEvent",
         "name": "DAM Festival"
       },
-
       {
         "@type": "MusicEvent",
         "name": "KamerFest"
       },
-
       {
         "@type": "MusicEvent",
         "name": "Western Balkan Youth Orchestra"
+      }
+    ],
+
+
+    "worksFor": [
+      {
+        "@type": "Organization",
+        "name": "Kosovo Philharmonic"
+      },
+      {
+        "@type": "Organization",
+        "name": "Kosovo Opera Orchestra"
       }
     ],
 
@@ -125,12 +125,10 @@ export default function Schema() {
         "@type": "Organization",
         "name": "Kosovo Philharmonic"
       },
-
       {
         "@type": "Organization",
         "name": "Kosovo Opera Orchestra"
       },
-
       {
         "@type": "Organization",
         "name": "Orkestra Prishtina"
@@ -141,18 +139,20 @@ export default function Schema() {
     "subjectOf": [
       {
         "@type": "Article",
-        "name": "Arthur Grumiaux International Violin Competition Finalists",
+        "name":
+          "Arthur Grumiaux International Violin Competition Finalists",
         "publisher": {
           "@type": "Organization",
           "name": "The Violin Channel"
-        }
+        },
+        "url":
+          "https://theviolinchannel.com/grumiaux-international-violin-competition-belgium-finalists-2018/"
       }
     ],
 
 
     "sameAs": [
       "https://sq.wikipedia.org/wiki/Arsim_Gashi",
-      "https://www.wikidata.org/wiki/Q97440789",
 
       "https://www.instagram.com/arsimgashiviolinist/",
       "https://www.facebook.com/arsimgashiofficial",
