@@ -3,6 +3,8 @@ export default function Schema() {
     "@context": "https://schema.org",
     "@type": "Person",
 
+    "@id": "https://arsimgashi.com/#person",
+
     "name": "Arsim Gashi",
 
     "alternateName": [
@@ -12,21 +14,16 @@ export default function Schema() {
 
     "url": "https://arsimgashi.com",
 
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://arsimgashi.com"
-    },
-
     "image": {
       "@type": "ImageObject",
-      "url": "https://arsimgashi.com/hero.jpg",
+      "url": "https://arsimgashi.com/og-image.jpg",
       "width": 1200,
-      "height": 1200
+      "height": 630
     },
 
 
     "description":
-      "Arsim Gashi is a Kosovan classical violinist, soloist and concertmaster known for international competitions, orchestral performances and classical violin interpretation.",
+      "Arsim Gashi is a Kosovan violinist, soloist and concertmaster known for classical violin performances, international competitions and orchestral activities.",
 
 
     "birthDate": "2001-03-24",
@@ -44,7 +41,7 @@ export default function Schema() {
 
 
     "jobTitle": [
-      "Professional Violinist",
+      "Violinist",
       "Soloist",
       "Concertmaster",
       "Chamber Musician"
@@ -53,42 +50,18 @@ export default function Schema() {
 
     "hasOccupation": {
       "@type": "Occupation",
-      "name": "Classical Violinist",
-      "description":
-        "Professional violin performer specializing in solo, chamber and orchestral music."
+      "name": "Professional Violinist"
     },
+
+
+    "instrument": "Violin",
 
 
     "knowsAbout": [
       "Classical Music",
       "Violin Performance",
-      "Solo Violin",
       "Chamber Music",
-      "Orchestral Performance",
-      "Violin Concertos"
-    ],
-
-
-    "hasCredential": [
-      {
-        "@type": "EducationalOccupationalCredential",
-        "name": "Master of Arts in Violin Performance",
-        "credentialCategory": "Master Degree",
-        "recognizedBy": {
-          "@type": "Organization",
-          "name": "University of Prishtina - Faculty of Arts"
-        }
-      },
-
-      {
-        "@type": "EducationalOccupationalCredential",
-        "name": "Bachelor of Arts in Violin Performance",
-        "credentialCategory": "Bachelor Degree",
-        "recognizedBy": {
-          "@type": "Organization",
-          "name": "University of Prishtina - Faculty of Arts"
-        }
-      }
+      "Orchestral Music"
     ],
 
 
@@ -97,7 +70,6 @@ export default function Schema() {
         "@type": "EducationalOrganization",
         "name": "Faculty of Arts, University of Prishtina"
       },
-
       {
         "@type": "EducationalOrganization",
         "name": "Prenk Jakova Music School"
@@ -105,18 +77,50 @@ export default function Schema() {
     ],
 
 
-    "award": [
-      "Arthur Grumiaux International Violin Competition - Finalist, Belgium (2018)",
-      "Special Prize from violinist Dora Schwarzberg - Arthur Grumiaux Competition",
-      "Ars Kosova Competition - First Absolute Prize (three times)",
-      "ESTA Austria - Young Talent (three times)",
-      "ESTA Kosovo - Promising Talent",
-      "Whitgift International Competition South London - Second Prize (three times)",
-      "Ohrid te Sakam Competition - First Absolute Prize"
+    "hasCredential": [
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "Bachelor Degree in Violin Performance",
+        "dateCreated": "2024"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "Master Degree in Violin Performance",
+        "dateCreated": "2026"
+      }
     ],
 
 
-    "affiliation": [
+    "award": [
+      "Arthur Grumiaux International Competition for Young Violinists - Finalist (Belgium, 2018)",
+      "Special Prize from violinist Dora Schwarzberg - Arthur Grumiaux Competition",
+      "Ars Kosova - First Absolute Prize",
+      "ESTA Austria - Young Talent",
+      "ESTA Kosovo - Promising Talent",
+      "Whitgift International Competition South London - Second Prize",
+      "Ohrid te Sakam - First Absolute Prize"
+    ],
+
+
+    "performerIn": [
+      {
+        "@type": "MusicEvent",
+        "name": "DAM Festival"
+      },
+
+      {
+        "@type": "MusicEvent",
+        "name": "KamerFest"
+      },
+
+      {
+        "@type": "MusicEvent",
+        "name": "Western Balkan Youth Orchestra"
+      }
+    ],
+
+
+    "memberOf": [
       {
         "@type": "Organization",
         "name": "Kosovo Philharmonic"
@@ -134,24 +138,6 @@ export default function Schema() {
     ],
 
 
-    "performerIn": [
-      {
-        "@type": "Event",
-        "name": "DAM Festival"
-      },
-
-      {
-        "@type": "Event",
-        "name": "KamerFest"
-      },
-
-      {
-        "@type": "Event",
-        "name": "Western Balkan Youth Orchestra"
-      }
-    ],
-
-
     "subjectOf": [
       {
         "@type": "Article",
@@ -159,9 +145,7 @@ export default function Schema() {
         "publisher": {
           "@type": "Organization",
           "name": "The Violin Channel"
-        },
-        "url":
-          "https://theviolinchannel.com/grumiaux-international-violin-competition-belgium-finalists-2018/"
+        }
       }
     ],
 
@@ -185,11 +169,9 @@ export default function Schema() {
 
     "contactPoint": {
       "@type": "ContactPoint",
-      "contactType": "Professional bookings",
-      "email": "Info@arsimgashi.com",
-      "telephone": "+38345963933"
+      "contactType": "Booking and professional inquiries",
+      "url": "https://arsimgashi.com/#contact"
     }
-
   };
 
 
