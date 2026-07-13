@@ -12,25 +12,32 @@ export default function Hero() {
         <Image
           src="/hero.jpg"
           alt="Arsim Gashi, professional violinist performing with violin"
-          fill
+          width={1920}
+          height={1080}
           priority
-          className="object-cover object-center"
+          sizes="100vw"
+          className="w-full h-full object-cover object-center"
         />
       </div>
+
 
       {/* Mobile Image */}
       <div className="block md:hidden absolute inset-0">
         <Image
           src="/hero-mobile.jpg"
           alt="Arsim Gashi violinist official portrait"
-          fill
+          width={1080}
+          height={1920}
           priority
-          className="object-cover object-center"
+          sizes="100vw"
+          className="w-full h-full object-cover object-center"
         />
       </div>
 
+
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/60" />
+
 
       {/* Content */}
       <div className="relative z-10 text-center text-white px-6">
@@ -39,19 +46,23 @@ export default function Hero() {
           Official Website
         </p>
 
+
         <h1 className="text-5xl md:text-8xl font-bold tracking-[10px]">
           ARSIM GASHI
         </h1>
 
+
         <p className="mt-6 text-xl md:text-3xl font-light text-gray-200">
           Violinist • Soloist • Concertmaster
         </p>
+
 
         <p className="mt-6 max-w-2xl mx-auto text-gray-300 leading-relaxed">
           Classical violinist dedicated to artistic excellence,
           expressive performances and unforgettable musical experiences
           through the violin.
         </p>
+
 
         <div className="mt-10 flex flex-col sm:flex-row justify-center gap-5">
 
@@ -62,6 +73,7 @@ export default function Hero() {
           >
             Biography
           </a>
+
 
           <a
             href="#gallery"
