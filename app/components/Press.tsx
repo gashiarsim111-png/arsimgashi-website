@@ -30,7 +30,7 @@ export default function Press() {
     {
       title: "DAM Festival",
       description:
-        "Arsim Gashi performed as a featured violinist at the DAM International Music Festival in Prishtina, presenting a recital with pianist Andi Duraku and String Orchestra during the 2023 edition.",
+        "Arsim Gashi performed as a featured violinist at DAM International Music Festival in Prishtina, presenting a recital with pianist Andi Duraku and String Orchestra during the 2023 edition.",
       link:
         "https://www.koha.net/en/kulture/violina-ne-dialog-me-piano-realizon-nje-enderr-paralajmeron-skenen",
       button: "Read publication",
@@ -41,12 +41,11 @@ export default function Press() {
   return (
     <section
       id="press"
+      aria-labelledby="press-title"
       className="py-24 px-6 bg-gray-50 text-black"
-      aria-label="Arsim Gashi press and international recognition"
     >
 
       <div className="max-w-6xl mx-auto">
-
 
         <div className="text-center mb-14">
 
@@ -55,26 +54,31 @@ export default function Press() {
           </p>
 
 
-          <h2 className="text-4xl md:text-5xl font-bold mt-4">
+          <h2
+            id="press-title"
+            className="text-4xl md:text-5xl font-bold mt-4"
+          >
             Press & International Recognition
           </h2>
 
 
           <p className="mt-5 text-gray-600 max-w-2xl mx-auto">
-            International competitions, media features and artistic achievements
-            recognizing Arsim Gashi’s career as a classical violinist.
+            International media coverage, competitions and artistic
+            achievements recognizing Arsim Gashi’s career as a classical
+            violinist.
           </p>
 
         </div>
 
 
-
-        <div className="grid md:grid-cols-2 gap-8">
-
+        <div
+          className="grid md:grid-cols-2 gap-8"
+          aria-label="Press publications and recognitions"
+        >
 
           {recognitions.map((item) => (
 
-            <div
+            <article
               key={item.title}
               className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition"
             >
@@ -93,19 +97,18 @@ export default function Press() {
                 href={item.link}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={`${item.button} - ${item.title}`}
                 className="inline-block mt-5 underline font-medium hover:text-gray-600 transition"
               >
                 {item.button}
               </a>
 
 
-            </div>
+            </article>
 
           ))}
 
-
         </div>
-
 
       </div>
 
