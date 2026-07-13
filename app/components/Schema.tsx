@@ -63,25 +63,57 @@ export default function Schema() {
     "alumniOf": [
       {
         "@type": "EducationalOrganization",
-        "name":
-          "Faculty of Arts, University of Prishtina"
+        "name": "Faculty of Arts, University of Prishtina"
       },
       {
         "@type": "EducationalOrganization",
-        "name":
-          "Prenk Jakova Music School"
+        "name": "Prenk Jakova Music School"
       }
     ],
 
 
     "award": [
-      "Finalist - Arthur Grumiaux International Violin Competition, Belgium (2018)",
-      "Special Prize from violinist Dora Schwarzberg - Arthur Grumiaux Competition",
-      "First Absolute Prize - Ars Kosova Competition",
-      "Young Talent - ESTA Austria",
-      "Promising Talent - ESTA Kosovo",
-      "Second Prize - Whitgift International Competition, South London",
-      "First Absolute Prize - Ohrid te Sakam Competition"
+      {
+        "@type": "Award",
+        "name": "Arthur Grumiaux International Violin Competition",
+        "description":
+          "Finalist and recipient of a Special Prize from violinist Dora Schwarzberg, Belgium (2018)."
+      },
+
+      {
+        "@type": "Award",
+        "name": "Ars Kosova Competition",
+        "description":
+          "First Absolute Prize winner (three times)."
+      },
+
+      {
+        "@type": "Award",
+        "name": "ESTA Austria Young Talent",
+        "description":
+          "Young Talent recognition (three times)."
+      },
+
+      {
+        "@type": "Award",
+        "name": "ESTA Kosovo Promising Talent",
+        "description":
+          "Promising Talent recognition."
+      },
+
+      {
+        "@type": "Award",
+        "name": "Whitgift International Competition, South London",
+        "description":
+          "Second Prize winner (three times)."
+      },
+
+      {
+        "@type": "Award",
+        "name": "Ohrid te Sakam Competition",
+        "description":
+          "First Absolute Prize winner."
+      }
     ],
 
 
@@ -90,10 +122,12 @@ export default function Schema() {
         "@type": "MusicEvent",
         "name": "DAM Festival"
       },
+
       {
         "@type": "MusicEvent",
         "name": "KamerFest"
       },
+
       {
         "@type": "MusicEvent",
         "name": "Western Balkan Youth Orchestra"
@@ -106,10 +140,12 @@ export default function Schema() {
         "@type": "Organization",
         "name": "Kosovo Philharmonic"
       },
+
       {
         "@type": "Organization",
         "name": "Orkestra Prishtina"
       },
+
       {
         "@type": "Organization",
         "name": "Kosovo Opera Orchestra"
@@ -120,24 +156,30 @@ export default function Schema() {
     "subjectOf": [
       {
         "@type": "Article",
+
         "name":
           "Arthur Grumiaux International Violin Competition Finalists",
+
         "publisher": {
           "@type": "Organization",
           "name": "The Violin Channel"
         },
+
         "url":
           "https://theviolinchannel.com/grumiaux-international-violin-competition-belgium-finalists-2018/"
       },
 
       {
         "@type": "Article",
+
         "name":
           "Arthur Grumiaux International Competition Candidates",
-        publisher: {
+
+        "publisher": {
           "@type": "Organization",
           "name": "The Violin Channel"
         },
+
         "url":
           "https://theviolinchannel.com/candidates-2018-grumiaux-international-competition-young-violinists/"
       }
@@ -146,11 +188,15 @@ export default function Schema() {
 
     "sameAs": [
       "https://sq.wikipedia.org/wiki/Arsim_Gashi",
+
       "https://www.wikidata.org/wiki/Q97440789",
 
       "https://www.instagram.com/arsimgashiviolinist/",
+
       "https://www.facebook.com/arsimgashiofficial",
+
       "https://www.youtube.com/@arsimgashiviolinist",
+
       "https://www.tiktok.com/@arsimgashiviolinist"
     ],
 
@@ -163,8 +209,10 @@ export default function Schema() {
 
     "contactPoint": {
       "@type": "ContactPoint",
+
       "contactType":
         "Booking and professional inquiries",
+
       "url":
         "https://arsimgashi.com/contact"
     }

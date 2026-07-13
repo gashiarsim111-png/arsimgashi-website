@@ -3,7 +3,7 @@ export default function Press() {
     <section
       id="press"
       className="py-24 px-6 bg-gray-50 text-black"
-      aria-label="Arsim Gashi press and recognition"
+      aria-label="Arsim Gashi press and international recognition"
     >
       <div className="max-w-6xl mx-auto">
 
@@ -27,15 +27,15 @@ export default function Press() {
         <div className="space-y-8">
 
 
-          <div className="bg-white p-8 rounded-2xl shadow-sm">
+          <article className="bg-white p-8 rounded-2xl shadow-sm">
 
             <h3 className="text-2xl font-bold">
               The Violin Channel
             </h3>
 
             <p className="mt-3 text-gray-700 leading-relaxed">
-              Featured as a finalist and participant at the
-              International Grumiaux Competition for Young Violinists,
+              Arsim Gashi was featured as a finalist and participant at the
+              Arthur Grumiaux International Competition for Young Violinists,
               Belgium (2018).
             </p>
 
@@ -48,20 +48,19 @@ export default function Press() {
               Read publication
             </a>
 
-          </div>
+          </article>
 
 
 
-          <div className="bg-white p-8 rounded-2xl shadow-sm">
+          <article className="bg-white p-8 rounded-2xl shadow-sm">
 
             <h3 className="text-2xl font-bold">
               KamerFest
             </h3>
 
             <p className="mt-3 text-gray-700 leading-relaxed">
-              Featured artist biography highlighting Arsim Gashi’s
-              violin studies, performances, competitions and artistic
-              achievements.
+              Featured artist biography highlighting Arsim Gashi’s violin
+              education, competitions, performances and artistic development.
             </p>
 
             <a
@@ -73,22 +72,23 @@ export default function Press() {
               View source
             </a>
 
-          </div>
+          </article>
 
 
 
-          <div className="bg-white p-8 rounded-2xl shadow-sm">
+          <article className="bg-white p-8 rounded-2xl shadow-sm">
 
             <h3 className="text-2xl font-bold">
               DAM Festival
             </h3>
 
             <p className="mt-3 text-gray-700 leading-relaxed">
-              Featured as a performing violinist in Kosovo’s classical
-              music scene through artistic appearances and concerts.
+              Arsim Gashi has appeared as a violin performer in Kosovo’s
+              contemporary classical music scene through concerts and
+              artistic collaborations.
             </p>
 
-          </div>
+          </article>
 
 
         </div>
