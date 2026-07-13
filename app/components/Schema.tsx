@@ -89,6 +89,22 @@ export default function Schema() {
     ],
 
 
+    "memberOf": [
+      {
+        "@type": "Organization",
+        "name": "Kosovo Philharmonic"
+      },
+      {
+        "@type": "Organization",
+        "name": "Orkestra Prishtina"
+      },
+      {
+        "@type": "Organization",
+        "name": "Kosovo Opera Orchestra"
+      }
+    ],
+
+
     "award": [
       "Finalist - Arthur Grumiaux International Violin Competition, Belgium (2018)",
       "Special Prize from violinist Dora Schwarzberg - Arthur Grumiaux Competition",
@@ -100,43 +116,10 @@ export default function Schema() {
     ],
 
 
-    "performerIn": [
-      {
-        "@type": "MusicEvent",
-        "name": "DAM Festival"
-      },
-      {
-        "@type": "MusicEvent",
-        "name": "KamerFest"
-      },
-      {
-        "@type": "MusicEvent",
-        "name": "Western Balkan Youth Orchestra"
-      }
-    ],
-
-
-    "memberOf": [
-      {
-        "@type": "Organization",
-        "name": "Kosovo Philharmonic"
-      },
-      {
-        "@type": "Organization",
-        "name": "Kosovo Opera Orchestra"
-      },
-      {
-        "@type": "Organization",
-        "name": "Orkestra Prishtina"
-      }
-    ],
-
-
     "subjectOf": [
       {
         "@type": "Article",
-        "name":
-          "Arthur Grumiaux International Violin Competition Finalists",
+        "name": "Arthur Grumiaux International Violin Competition Finalists",
         "publisher": {
           "@type": "Organization",
           "name": "The Violin Channel"
@@ -147,8 +130,7 @@ export default function Schema() {
 
       {
         "@type": "Article",
-        "name":
-          "Arthur Grumiaux International Competition Candidates",
+        "name": "Arthur Grumiaux International Competition Candidates",
         "publisher": {
           "@type": "Organization",
           "name": "The Violin Channel"
@@ -161,7 +143,6 @@ export default function Schema() {
 
     "sameAs": [
       "https://sq.wikipedia.org/wiki/Arsim_Gashi",
-
       "https://www.instagram.com/arsimgashiviolinist/",
       "https://www.facebook.com/arsimgashiofficial",
       "https://www.youtube.com/@arsimgashiviolinist",
@@ -177,10 +158,8 @@ export default function Schema() {
 
     "contactPoint": {
       "@type": "ContactPoint",
-      "contactType":
-        "Booking and professional inquiries",
-      "url":
-        "https://www.arsimgashi.com/contact"
+      "contactType": "Booking and professional inquiries",
+      "url": "https://www.arsimgashi.com/contact"
     }
   };
 
