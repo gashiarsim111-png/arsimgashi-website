@@ -3,100 +3,170 @@ import { Cinzel } from "next/font/google";
 import "./globals.css";
 import Schema from "./components/Schema";
 
+
 const cinzel = Cinzel({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
+  display: "swap",
 });
 
+
 export const metadata: Metadata = {
+
   metadataBase: new URL("https://www.arsimgashi.com"),
+
 
   title: {
     default: "Arsim Gashi | Violinist",
     template: "%s | Arsim Gashi",
   },
 
+
   description:
-    "Official website of Arsim Gashi, violinist, soloist and concertmaster. Discover biography, performances, gallery and contact information.",
+    "Official website of Arsim Gashi, Kosovan violinist, soloist and concertmaster. Discover biography, performances, gallery and contact information.",
+
 
   keywords: [
     "Arsim Gashi",
     "Arsim Gashi Violinist",
-    "Violinist",
-    "Classical Violinist",
-    "Soloist",
-    "Concertmaster",
     "Kosovo Violinist",
-    "Official Website",
+    "Classical Violinist",
+    "Violin Soloist",
+    "Concertmaster",
+    "Classical Music",
   ],
 
-  authors: [{ name: "Arsim Gashi" }],
+
+  authors: [
+    {
+      name: "Arsim Gashi",
+    },
+  ],
+
+
   creator: "Arsim Gashi",
+
   publisher: "Arsim Gashi",
-  applicationName: "Arsim Gashi Official Website",
-  category: "Music",
+
 
   alternates: {
     canonical: "https://www.arsimgashi.com",
   },
 
+
   openGraph: {
+
+    type: "website",
+
+    url: "https://www.arsimgashi.com",
+
     title: "Arsim Gashi | Violinist",
+
     description:
       "Official website of Arsim Gashi, violinist, soloist and concertmaster.",
-    url: "https://www.arsimgashi.com",
+
     siteName: "Arsim Gashi",
+
     locale: "en_US",
-    type: "website",
+
+
     images: [
       {
-        url: "/og-image.jpg",
+        url: "https://www.arsimgashi.com/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Arsim Gashi | Violinist",
+        alt: "Arsim Gashi Violinist",
       },
     ],
+
   },
+
 
   twitter: {
+
     card: "summary_large_image",
+
     title: "Arsim Gashi | Violinist",
+
     description:
       "Official website of Arsim Gashi, violinist, soloist and concertmaster.",
-    images: ["/og-image.jpg"],
+
+
+    images: [
+      "https://www.arsimgashi.com/og-image.jpg",
+    ],
+
   },
+
 
   robots: {
+
     index: true,
+
     follow: true,
-    noimageindex: false,
+
+
     googleBot: {
+
       index: true,
+
       follow: true,
+
       "max-image-preview": "large",
-      "max-video-preview": -1,
+
       "max-snippet": -1,
+
+      "max-video-preview": -1,
+
     },
+
   },
+
 
   icons: {
+
     icon: "/favicon.ico",
+
     shortcut: "/favicon.ico",
+
     apple: "/apple-touch-icon.png",
+
   },
+
 };
 
+
+
 export default function RootLayout({
+
   children,
+
 }: Readonly<{
+
   children: React.ReactNode;
+
 }>) {
+
+
   return (
+
     <html lang="en">
+
+
       <body className={cinzel.className}>
+
+
         <Schema />
+
+
         {children}
+
+
       </body>
+
+
     </html>
+
   );
+
 }
