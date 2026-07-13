@@ -23,7 +23,7 @@ export default function Schema() {
     },
 
     "description":
-      "Arsim Gashi is a Kosovan violinist, soloist and concertmaster known for classical violin performances, international competitions and orchestral activities.",
+      "Arsim Gashi is a Kosovan violinist, soloist and concertmaster known for classical violin performances, solo concerts, chamber music and orchestral activities.",
 
 
     "mainEntityOfPage": {
@@ -33,7 +33,6 @@ export default function Schema() {
 
 
     "birthDate": "2001-03-24",
-
 
     "birthPlace": {
       "@type": "Place",
@@ -58,8 +57,6 @@ export default function Schema() {
     "hasOccupation": {
       "@type": "Occupation",
       "name": "Professional Violinist",
-      "description":
-        "Classical violin performer specializing in solo, chamber and orchestral performances.",
       "occupationLocation": {
         "@type": "Country",
         "name": "Kosovo"
@@ -130,6 +127,7 @@ export default function Schema() {
     ],
 
 
+
     "award": [
       "Finalist at Arthur Grumiaux International Violin Competition, Belgium (2018)",
       "Special Prize from violinist Dora Schwarzberg at Arthur Grumiaux International Violin Competition",
@@ -142,59 +140,15 @@ export default function Schema() {
 
 
 
-    "performerIn": [
-
-      {
-        "@type": "Event",
-        "name": "DAM Festival",
-        "description":
-          "Arsim Gashi performed as a violinist at DAM Festival, an international music festival held in Prishtina, Kosovo.",
-        "location": {
-          "@type": "Place",
-          "name": "Prishtina, Kosovo"
-        }
-      },
-
-
-      {
-        "@type": "Event",
-        "name": "KamerFest International Festival",
-        "description":
-          "Arsim Gashi participated as a violinist at KamerFest International Festival in Kosovo.",
-        "location": {
-          "@type": "Place",
-          "name": "Kosovo"
-        }
-      },
-
-
-      {
-        "@type": "Event",
-        "name": "Western Balkan Youth Orchestra",
-        "description":
-          "Arsim Gashi performed as a violinist with Western Balkan Youth Orchestra.",
-        "location": {
-          "@type": "Place",
-          "name": "Western Balkans"
-        }
-      }
-
-    ],
-
-
-
     "subjectOf": [
 
       {
         "@type": "Article",
-        "name":
-          "Arthur Grumiaux International Violin Competition Finalists",
-
+        "name": "Arthur Grumiaux International Violin Competition Finalists",
         "publisher": {
           "@type": "Organization",
           "name": "The Violin Channel"
         },
-
         "url":
           "https://theviolinchannel.com/grumiaux-international-violin-competition-belgium-finalists-2018/"
       },
@@ -202,16 +156,42 @@ export default function Schema() {
 
       {
         "@type": "Article",
-        "name":
-          "Arthur Grumiaux International Competition Candidates",
-
+        "name": "Arthur Grumiaux International Competition Candidates",
         "publisher": {
           "@type": "Organization",
           "name": "The Violin Channel"
         },
-
         "url":
           "https://theviolinchannel.com/candidates-2018-grumiaux-international-competition-young-violinists/"
+      }
+
+    ],
+
+
+
+    "performerIn": [
+
+      {
+        "@type": "CreativeWork",
+        "name": "DAM Festival",
+        "description":
+          "Classical music recital performance by Arsim Gashi at DAM Festival in Prishtina, Kosovo."
+      },
+
+
+      {
+        "@type": "CreativeWork",
+        "name": "Kosova KamerFest International Festival",
+        "description":
+          "Arsim Gashi participated as concertmaster and solo violinist with orchestra at Kosova KamerFest International Festival."
+      },
+
+
+      {
+        "@type": "CreativeWork",
+        "name": "Western Balkan Youth Orchestra",
+        "description":
+          "Arsim Gashi participated as violinist in Western Balkan Youth Orchestra performances."
       }
 
     ],
@@ -263,13 +243,11 @@ export default function Schema() {
 
 
   return (
-
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{
         __html: JSON.stringify(schema)
       }}
     />
-
   );
 }
