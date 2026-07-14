@@ -152,23 +152,6 @@ export default function Schema() {
       },
     ],
 
-
-    performerIn: [
-      {
-        "@type": "Event",
-        name: "DAM Festival",
-      },
-      {
-        "@type": "Event",
-        name: "KamerFest",
-      },
-      {
-        "@type": "Event",
-        name: "Western Balkans Youth Orchestra",
-      },
-    ],
-
-
     sameAs: [
       "https://www.wikidata.org/wiki/Q97440789",
       "https://sq.wikipedia.org/wiki/Arsim_Gashi",
